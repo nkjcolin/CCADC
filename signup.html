@@ -113,34 +113,43 @@
 <html>
 <head>
 <title>Sign Up</title>
-<link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 <body>
-<form name="frmChange" method="post" action="" onSubmit="return validatePassword()">
-<div style="width:500px;">
-<div class="message"><?php if(isset($message)) { echo $message; } ?></div>
-<table border="0" cellpadding="10" cellspacing="0" width="500" align="center" class="tblSaveForm">
-<tr class="tableheader">
-<td colspan="2">Enter Your Name</td>
-<td width="60%"><input type="password" name="username" class="txtField"/><span id="currentPassword"  class="required"></span></td>
-</tr>
-</tr>
-<td><label>Enter Your Email</label></td>
-<td><input type="email" name="useremail" class="txtField"/><span id="useremail" class="required"></span></td>
-</tr>
-<td><label>Password</label></td>
-<td><input type="password" name="newPassword" class="txtField"/><span id="newPassword" class="required"></span></td>
-</tr>
-<td><label>Confirm Password</label></td>
-<td><input type="password" name="confirmPassword" class="txtField"/><span id="confirmPassword" class="required"></span></td>
-</tr>
-<tr>
-<td colspan="2"><input type="submit" name="submit" value="Submit" class="btnSubmit">
-</tr>
-</table>
-</div>
-</form>
-</body></html>
+
+	<div class="container">
+		<form method="post" action="signup.php">
+
+			<div>
+				<label for="name">Username:</label>
+				<input type="text" name="username" required><br>
+
+			</div>
+
+			<div>
+				<label for="email">Email:</label>
+				<input type="email" name="email" required><br>
+
+			</div>
+
+			<div>
+				<label for="password">Password:</label>
+				<input type="password" name="password1" required><br>
+
+			</div>
+
+			<div>
+				<label for="password">Confirm Password:</label>
+				<input type="password" name="password2" required><br>
+
+			</div>
+
+			<button type="submit"> Submit </button>
+
+			<p>Already a user?<a href="login.html"><b>Login</b></a></p>
+		</form>
+	</div>	
+</body>
+</html>
                                         </div>
                                     </div>
                                 </div>

@@ -74,7 +74,7 @@
                     <li><a href="product-details.html">Products</a></li>
                     <li><a href="cart.html">Cart</a></li>
                     <li><a href="signup.html">Sign Up</a></li>
-                    <li class="active"><a href="login.html">Login</a></li>
+                    <li class= "active"><a href="login.html">Login</a></li>
                 </ul>
             </nav>
             <!-- Button Group -->
@@ -105,35 +105,37 @@
                         <div class="checkout_details_area mt-50 clearfix">
 
                             <div class="cart-title">
-                                <h2>Member Login</h2>
+                                <h2>Login</h2>
                             </div>
 
                             <form action="#" method="post">
                                 <div class="row">
 <html>
 <head>
-<title>Member Login</title>
-<link rel="stylesheet" type="text/css" href="styles.css" />
+<title>Login</title>
 </head>
 <body>
-<form name="frmChange" method="post" action="" onSubmit="return validatePassword()">
-<div style="width:500px;">
-<div class="message"><?php if(isset($message)) { echo $message; } ?></div>
-<table border="0" cellpadding="10" cellspacing="0" width="500" align="center" class="tblSaveForm">
-<tr class="tableheader">
-<td colspan="2">Enter Your Email:</td>
-<td width="60%"><input type="email" name="email" class="txtField"/><span id="email"  class="required"></span></td>
-</tr>
-</tr>
-<td><label>Password:</label></td>
-<td><input type="password" name="password" class="txtField"/><span id="password" class="required"></span></td>
-<tr>
-</tr>
-</table>
-<p><button type="submit">Login</button></p><p><a href="updatepassword.html">Forget username/password?</a></p>
-<p><a href="signup.html">Create New Account</a></p>
-</div>
-</form>
+
+    <div class="container">
+        <form method="post" action="login.php">
+
+            <div>
+                <label for="name">Username:</label>
+                <input type="text" name="username" required><br>
+
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password1" required><br>
+
+            </div>
+
+            <button type="submit"> Login </button>
+
+            <p>Not a user?<a href="signup.html"><b>Sign Up</b></a></p>
+        </form>
+    </div>  
 </body></html>
                                         </div>
                                     </div>
